@@ -32,6 +32,12 @@ if [ !"$(sudo docker ps -a -q)" ]; then
     fi
 fi
 
+sudo docker network prune;
+
+# display list of networks
+echo "List of Networks";
+sudo docker network ls;
+
 # display list of volumes
 echo "List of volumes";
 sudo docker volume ls;
